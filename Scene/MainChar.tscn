@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://d04shmlnsu87"]
+
+[ext_resource type="Script" uid="uid://bf7ev2sdurdq2" path="res://main_char.gd" id="1_1ocmp"]
+[ext_resource type="Texture2D" uid="uid://ibsok486hiy3" path="res://Spite/Tiny Wonder Farm Free/characters/main character/walk and idle.png" id="1_rmcr5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ocmp"]
+atlas = ExtResource("1_rmcr5")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubhp6"]
+atlas = ExtResource("1_rmcr5")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vv0d"]
+atlas = ExtResource("1_rmcr5")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txsrs"]
+atlas = ExtResource("1_rmcr5")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1dp5r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ocmp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubhp6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vv0d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txsrs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_no3ia"]
+radius = 6.0
+height = 20.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_1ocmp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_1dp5r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -10)
+shape = SubResource("CapsuleShape2D_no3ia")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
