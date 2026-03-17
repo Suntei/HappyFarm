@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://bnp714u1vjqky"]
+
+[ext_resource type="Script" uid="uid://bhpdw08ivufm0" path="res://slimebutsmoll.gd" id="1_omxff"]
+[ext_resource type="Texture2D" uid="uid://ik6hugpuavpv" path="res://Spite/Keep/sprBogslium1.png" id="2_afbel"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovb2x"]
+atlas = ExtResource("2_afbel")
+region = Rect2(0, 0, 39, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h1m7t"]
+atlas = ExtResource("2_afbel")
+region = Rect2(39, 0, 39, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpykv"]
+atlas = ExtResource("2_afbel")
+region = Rect2(78, 0, 39, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8h7s"]
+atlas = ExtResource("2_afbel")
+region = Rect2(117, 0, 39, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1pd7a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovb2x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h1m7t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpykv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o8h7s")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cf2at"]
+radius = 3.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_omxff")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -5)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_1pd7a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_cf2at")
