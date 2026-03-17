@@ -1,37 +1,71 @@
 Happy Farm Paradise
 
-Happy Farm Paradise is a 2D game set in a living forest environment where creatures roam dynamically. The project focuses on environment design, character systems, and AI-driven mob behavior, built using Godot 4.
+Happy Farm Paradise is a 2D simulation game set in a dynamic forest environment where creatures roam freely. The project focuses on environment design, character systems, and AI-driven mob behavior, built using Godot 4.
+
+
+Features
+
+- Living forest environment  
+- Player movement and interaction  
+- AI-driven roaming mobs with spawn conditions  
+- Multiple maps (Forest, Town, Farm)  
+- Background music system  
+
 
 Development Progress
 
 Alpha Version
+Core system prototype:
+- Terrain creation  
+- Main character implementation  
+- Basic character movement  
 
-Initial prototype focusing on core systems:
+Demo Video:  
+https://youtu.be/pN2gQepCQFk  
 
-- Built the terrain
-- Created the main character
-- Implemented character movement
-  
-Demo Video:
-[https://youtu.be/pN2gQepCQFk](https://youtu.be/pN2gQepCQFk)
 
-Beta Version
-Expanded gameplay systems and world improvements:
-- Revamped the forest map
-- Improved character movement
-- Added roaming mobs with spawn conditions
-- Released beta version
+Beta 0.0
+Gameplay expansion:
+- Redesigned forest map  
+- Improved character movement  
+- Added roaming mobs with spawn conditions  
+- First beta release  
 
-Demo Video:
-[https://youtu.be/5oHBZiY8els](https://youtu.be/5oHBZiY8els)
+Demo Video:  
+https://youtu.be/5oHBZiY8els  
+
+
+Beta 0.1
+Content update:
+- Revamped character model  
+- Added town map  
+- Added farm map  
+- Added background music  
+
+Demo Video:  
+https://youtu.be/lKkWTXViQFk  
+
+
+Built With
+- Godot 4  
 
 Assets
+Game assets sourced from:
 
-Game assets provided by:
-- [https://ventilatore.itch.io/](https://ventilatore.itch.io/)
-- [https://monopixelart.itch.io/](https://monopixelart.itch.io/)
-  
-Scripts
+- https://ventilatore.itch.io/  
+- https://monopixelart.itch.io/  
+- https://kenmi-art.itch.io/cute-fantasy-rpg  
+- https://trislin.itch.io/pixel-lands-village  
 
+Music Credits
+
+- "Local Forecast - Elevator" by Kevin MacLeod  
+  License: Creative Commons Attribution 4.0 (CC BY 4.0)  
+  http://incompetech.com  
+
+- "Dreamy Cat" by Johny Grimes  
+  License: Creative Commons Attribution 3.0 (CC BY 3.0)  
+  https://soundcloud.com/johny-grimes  
+
+Scripts 
 Game logic and scripting implemented using **GDScript** with development support from ChatGPT.
-
